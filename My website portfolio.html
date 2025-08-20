@@ -2,24 +2,123 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jade's Pen</title>
+    <style>
+    
+    html, body {
+      height:100%;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .container{
+      min-height:100%;
+      display:flex;
+      flex-direction: column;
+    }
+    
+      body{
+        background-color:#847ee3;
+        flex: 1;
+      }
+      
+      .site-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px;
+        background-color:#1f0a55
+        
+     }
+
+      .site-header h1 {
+        margin: 0;
+        color: #d4bd1b;
+        font-size: 12px;
+      }
+      
+      .menu ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 15px;
+      }
+      
+      .menu a {
+        color: #f2e02c;
+        text-decoration: none;
+        font-weight: normal;
+      }
+      
+    .menu ul{
+        list-style-type: none;
+        margin:auto;
+        padding:0;
+        display:flex;
+        gap: 10px;
+        text-align:left;
+        font-size:12px
+      }
+      
+      .menu li{
+        display: inline;
+      }
+      
+      .menu a{
+        color: #9ca34d;
+      }
+      
+      .tagline {
+  color: #f2e02c;
+  font-style: italic;
+  font-size: 12px;
+  opacity: 0.6;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  background-color:#1f0a55 ;
+}
+
+
+      footer{
+        background-color:#0d0768;
+        padding: 50px;
+        color:white;
+        text-align:left;
+        margin-top:auto;
+      }
+      h2{
+      text-transform: uppercase;
+      text-align: center;
+      color:#f2e02c ;
+      background-color:#1f0a55 ;
+      opacity: 0.6;
+      padding: 0;
+      margin: 0;
+    }
+    </style>
   </head>
   <body>
-    <header>
-      <h1>Jade's Pen</h1>
-     <p1>Inkspiring kreativity...</p1>
-    </header>
-    <nav>
-      <div class="menu">
+    <header class="site-header">
+      <h1>Jade's Writing Portfolio</h1>
+    <nav class="menu">
         <ul>
-          <li>Jade's Writing Portfolio</li>
-          <li><a href="#">Home</a></li>
-          <li><a href="*">About</a></li>
-          <li><a href="†">Services</a></li>
-          <li><a href="№">Samples</a></li>
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="Services.html">Services</a></li>
+          <li><a href="Samples.html">Samples</a></li>
+          <li><a href="Contact.html">Contact</a></li>
         </ul>
-      </div>
     </nav>
-  </body>
+    </header>
+          <h2>Jade's Pen</h2>
+     <p class="tagline">Inkspiring kreativity...</p>
+    <div class="container">
+    <footer>
+  <p>© 2025 Jade's Pen</p>
+</footer>
+</div>
+  </body>  
 </html>
